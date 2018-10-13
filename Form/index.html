@@ -1,0 +1,544 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    
+</head>
+<body> 
+
+<!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Personal Details</li>
+                <li>Academic Details</li>
+                <li>Experiance</li>
+                <li>COntacts</li>
+                <li>Done</li>
+                
+            </ul>
+            <!-- fieldsets -->
+
+
+<!-- Personal details -->
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">Tell us something more about you</h3>
+
+                <table cellspacing="10" width="100%">
+                        <tr>
+                            <td><input type="text" name="fname" placeholder="First Name" /> </td>
+                            <td><input type="text" name="lname" placeholder="Last Name"/></td>
+                        </tr>
+                </table>
+                <h5 align="left" >Date of Birth</h5>
+                <input type="date" name="dob"/><br><br> 
+
+<!-- Father's Details -->
+                <h5 align="left" >Father's Details</h5>
+                <input type="text" name="fatherName" placeholder="Father's Name"/>
+                <input type="text" name="fatherOccupation" placeholder="Father's Occupation"/>
+                <input type="text" name="fatherOccupationAddress" placeholder="Father's Office Address"/>
+                <input type="text" name="annualIncome1" placeholder="Total Annual Income"/><br><br>
+                
+<!-- Mother's Details -->
+                <h5 align="left" >Mother's Details</h5>
+                <input type="text" name="motherName" placeholder="Mother's Name"/>
+                <input type="text" name="motherOccupation" placeholder="Mother's Occupation"/>
+                <input type="text" name="motherOccupationAddress" placeholder="Mother's Office Address"/>
+                <input type="text" name="annualIncome1" placeholder="Total Annual Income"/><br><br>
+
+<!--Layout for Gender, Martial-Status and Diff. abled -->
+                <h5 align="left" style="word-spacing: 350px" >Gender Martial-Status Differently-abled</h5>
+                <table cellspacing="10"  style="padding-right: 100px;" >
+                        <th><h5>Male</h5></th>
+                        <th><h5>Female</h5></th>
+                        <th style="padding-left: 290px;"><h5>Married</h5></th>
+                        <th><h5>Unmarried</h5></th>
+                        <th style="padding-left: 310px;"><h5>Yes</h5></th>
+                        <th><h5>No</h5></th>
+                        
+                        <tr>
+                            <td><input type="radio" name="myradio" value="gender"></td>
+                            <td><input type="radio" name="myradio" value="gender"></td>
+                            <td style="padding-left: 290px;" ><input type="radio" name="myradio" value="gender"></td>
+                            <td><input type="radio" name="myradio" value="gender"></td>
+                            <td style="padding-left: 310px;" ><input type="radio" name="myradio" value="gender"></td>
+                            <td><input type="radio" name="myradio" value="gender"></td>
+                        </tr>
+                         
+                </table>
+
+<!--Layout for Religino and Category -->
+                       <table>
+                           <th><h5 align="left" >Religion : </h5></th>
+                           <th style="padding-left: 170px;" ><h5>Category : </h5></th>
+                           <th style="padding-left: 275px;" ><h5>Blood Group : </h5></th>
+                           
+                           <tr>
+                               <td>
+                                 <select style="font-size: 15px;" >
+                                     <option>HINDU</option><option>MUSLIM</option><option>SIKH</option>
+                                     <option>CHRISTAN</option><option>JAIN</option><option>BUDDH</option>
+                                     <option>JUDA</option><option>ZOROASTRIAN</option><option>OTHERS</option>
+                                </select>                                                   
+                               </td>
+
+                               <td style="padding-left: 273px;">
+                                   <select style="font-size: 15px;">
+                                       <option>GENERAL</option><option>OBC</option><option>SC</option>
+                                       <option>ST</option><option>PWD</option><option>KASHMIR-MIGRANT</option>
+                                       <option>OTHERS</option>
+                                   </select>
+                               </td>
+                               <td  style="padding-left: 275px;" >
+                                   <select style="font-size: 15px" >
+                                       <option>A+</option><option>B+</option><option>AB+</option><option>O+</option>
+                                       <option>A-</option><option>B-</option><option>AB-</option><option>O-</option>
+                                   </select>
+                               </td>
+                           </tr>                   
+                       </table><br>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            
+<!-- Academic details -->
+            <fieldset>
+                <h2 class="fs-title">Academic Details</h2>
+                <h3 class="fs-subtitle">Your performance in academic </h3>
+                <h3 align="center">10th Class Details</h3><br>
+                
+               <table cellpadding="20px">
+                      <tr>
+                          <td style="padding-right: 50px" ><input type="text" name="roll10" placeholder="Examination Roll No." ></td>
+                          <td>Medium :
+                            <select style="font-size: 15px" >
+                              <option>English</option><option>Hindi</option>
+                            </select>
+                        </td>
+                            <td style="padding-left: 10px" >Stream :
+                        <select style="font-size: 15px" >
+                            <option>Science</option><option>Commerece</option><option>Arts</option>
+                        </select>
+                        </td>
+                      </tr>
+                    
+                    <tr>
+                        <td style="padding-top: 10px;" >Examination Board :  
+                        <select style="font-size: 15px" >
+                            <option>Andhra Pradesh Board of Secondary Education</option>
+                            <option>Andhra Pradesh Board of Intermediate Education</option>
+                            <option>Andhra Pradesh Open School Society</option>
+                            <option>Board of Higher Secondary Education Delhi</option>
+                            <option>Assam Higher Secondary Education Council</option>
+                            <option>Assam State Open School</option>
+                            <option>Bihar Board of Open Schooling & Examination</option>
+                            <option>Bihar Sanskrit Shiksha Board</option>
+                            <option>Bihar School Examination Board</option>
+                            <option>Central Board of Secondary Education (CBSE) </option>
+                            <option>Central Board of Education, Ajmer, Delhi</option>
+                            <option>Chhattisgarh Board of Secondary Education</option>
+                            <option>Council for the Indian School Certificate Examinations</option>
+                            <option>Grameen Mukt Vidhyalayi Shiksha Sansthan (GMVSS)</option>
+                            <option>Goa Board of Secondary & Higher Secondary Education</option>
+                            <option>Gujarat Secondary Education Board</option>
+                            <option>Haryana Board of School Education</option>
+                            <option>Himachal Pradesh Board of School Education</option>
+                            <option>Himachal Pradesh State Open School</option>
+                            <option>Jammu and Kashmir State Board of School Education</option>
+                            <option>Jammu and Kashmir State Open School</option>
+                            <option>Jharkhand Academic Council</option>
+                            <option>Karnataka Secondary Education Examination Board</option>
+                            <option>Kerala Higher Secondary Examination Board</option>
+                            <option>Kerala State Open School</option>
+                            <option>Board of Secondary Education, Madhya Pradesh</option>
+                            <option>Madhya Pradesh State Open School</option>
+                            <option>Maharashtra State Board of Secondary and Higher Secondary Education</option>
+                            <option>Meghalaya Board of School Education</option>
+                            <option>Mizoram Board of School Education</option>
+                            <option>Nagaland Board of School Education</option>
+                            <option>National Institute of Open Schooling</option>
+                            <option>Odisha Board of Secondary Education</option> 
+                            <option>Odisha Council of Higher Secondary Education</option>
+                            <option>Punjab School Education Board</option>
+                            <option>Board of Secondary Education, Rajasthan</option>
+                            <option>Rajasthan State Open School</option>
+                            <option>Tamil Nadu Board of Secondary Education</option>
+                            <option>Telangana Board of Intermediate Education</option>
+                            <option>Telangana Board of Secondary Education</option>
+                            <option>Tripura Board of Secondary Education</option>
+                            <option>Board of High School and Intermediate Education Uttar Pradesh</option>
+                            <option>Uttarakhand Board of School Education</option>
+                            <option>West Bengal Board of Madrasah Education</option>
+                            <option>West Bengal Board of Primary Education</option>
+                            <option>West Bengal Board of Secondary Education</option>
+                            <option>West Bengal Council of Higher Secondary Education</option>
+                            <option>West Bengal Council of Rabindra Open Schooling</option>
+                        </select>
+                        </td>
+                    </tr>
+                    </table>
+
+                    <table>
+                    <tr>
+                        <td style="padding-top: 10px; padding-right: 30px;" ><input type="text" name="obtainedMarks10" placeholder="Obtained Marks" ></td>
+                        <td style="padding-top: 10px;" ><input type="text" name="maxMarks10" placeholder="Maximum Marks" ></td>
+                    </tr>
+                </table>
+
+                <table cellspacing="15px" >
+                    <th>Subjects</th>
+                    <th>Obtained Marks</th>
+                    <th>Maximum Marks</th>
+                    <tr>
+                        <td><input type="text" name="sub110" placeholder="Subject 1"></td>
+                        <td><input type="text" name="o110" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max110" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub210" placeholder="Subject 2"></td>
+                        <td><input type="text" name="o210" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max210" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub310" placeholder="Subject 3"></td>
+                        <td><input type="text" name="o310" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max310" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub410" placeholder="Subject 4"></td>
+                        <td><input type="text" name="o410" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max410" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub510" placeholder="Subject 5"></td>
+                        <td><input type="text" name="o510" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max510" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub610" placeholder="Subject 6"></td>
+                        <td><input type="text" name="o610" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max610" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub710" placeholder="Subject 7"></td>
+                        <td><input type="text" name="o710" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max710" placeholder="Maximum Marks"></td>
+                    </tr>
+                </table><br>
+                  
+                <h3>12th Class Details</h3><br>
+
+               <table cellpadding="20px">
+                      <tr>
+                          <td style="padding-right: 50px" ><input type="text" name="roll10" placeholder="Examination Roll No." ></td>
+                          <td>Medium : 
+                            <select style="font-size: 15px"> 
+                             <option>English</option><option>Hindi</option>
+                            </select>
+                        </td>
+                        <td style="padding-left: 10px" >Stream : 
+                            <select style="font-size: 15px">
+                                <option>Science</option><option>Commerece</option><option>Arts</option>
+                            </select>
+                        </td>
+                      </tr>
+                    
+                    <tr>
+                        <td style="padding-top: 10px;" >Examination Board :  
+                        <select style="font-size: 15px" >
+                            <option>Andhra Pradesh Board of Secondary Education</option>
+                            <option>Andhra Pradesh Board of Intermediate Education</option>
+                            <option>Andhra Pradesh Open School Society</option>
+                            <option>Board of Higher Secondary Education Delhi</option>
+                            <option>Assam Higher Secondary Education Council</option>
+                            <option>Assam State Open School</option>
+                            <option>Bihar Board of Open Schooling & Examination</option>
+                            <option>Bihar Sanskrit Shiksha Board</option>
+                            <option>Bihar School Examination Board</option>
+                            <option>Central Board of Secondary Education (CBSE) </option>
+                            <option>Central Board of Education, Ajmer, Delhi</option>
+                            <option>Chhattisgarh Board of Secondary Education</option>
+                            <option>Council for the Indian School Certificate Examinations</option>
+                            <option>Grameen Mukt Vidhyalayi Shiksha Sansthan (GMVSS)</option>
+                            <option>Goa Board of Secondary & Higher Secondary Education</option>
+                            <option>Gujarat Secondary Education Board</option>
+                            <option>Haryana Board of School Education</option>
+                            <option>Himachal Pradesh Board of School Education</option>
+                            <option>Himachal Pradesh State Open School</option>
+                            <option>Jammu and Kashmir State Board of School Education</option>
+                            <option>Jammu and Kashmir State Open School</option>
+                            <option>Jharkhand Academic Council</option>
+                            <option>Karnataka Secondary Education Examination Board</option>
+                            <option>Kerala Higher Secondary Examination Board</option>
+                            <option>Kerala State Open School</option>
+                            <option>Board of Secondary Education, Madhya Pradesh</option>
+                            <option>Madhya Pradesh State Open School</option>
+                            <option>Maharashtra State Board of Secondary and Higher Secondary Education</option>
+                            <option>Meghalaya Board of School Education</option>
+                            <option>Mizoram Board of School Education</option>
+                            <option>Nagaland Board of School Education</option>
+                            <option>National Institute of Open Schooling</option>
+                            <option>Odisha Board of Secondary Education</option> 
+                            <option>Odisha Council of Higher Secondary Education</option>
+                            <option>Punjab School Education Board</option>
+                            <option>Board of Secondary Education, Rajasthan</option>
+                            <option>Rajasthan State Open School</option>
+                            <option>Tamil Nadu Board of Secondary Education</option>
+                            <option>Telangana Board of Intermediate Education</option>
+                            <option>Telangana Board of Secondary Education</option>
+                            <option>Tripura Board of Secondary Education</option>
+                            <option>Board of High School and Intermediate Education Uttar Pradesh</option>
+                            <option>Uttarakhand Board of School Education</option>
+                            <option>West Bengal Board of Madrasah Education</option>
+                            <option>West Bengal Board of Primary Education</option>
+                            <option>West Bengal Board of Secondary Education</option>
+                            <option>West Bengal Council of Higher Secondary Education</option>
+                            <option>West Bengal Council of Rabindra Open Schooling</option>
+                        </select>
+                        </td>
+                        <td style="padding-left: 148px;"  colspan="2" >Year Of Passing : 
+                                 <select style="font-size: 15px" >
+                                    <option>2012</option><option>2013</option><option>2014</option>
+                                    <option>2015</option><option>2016</option><option>2017</option>
+                                    <option>2018</option><option>2019</option><option>2020</option>
+                                    <option>2021</option><option>2022</option><option>2023</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <table>
+                    <tr>
+                        <td style="padding-top: 10px; padding-right: 30px;" ><input type="text" name="obtainedMarks10" placeholder="Obtained Marks" ></td>
+                        <td style="padding-top: 10px;" ><input type="text" name="maxMarks10" placeholder="Maximum Marks" ></td>
+                    </tr>
+                </table>
+
+                <table cellspacing="15px" >
+                    <th>Subjects</th>
+                    <th>Obtained Marks</th>
+                    <th>Maximum Marks</th>
+                    <tr>
+                        <td><input type="text" name="sub110" placeholder="Subject 1"></td>
+                        <td><input type="text" name="o110" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max110" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub210" placeholder="Subject 2"></td>
+                        <td><input type="text" name="o210" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max210" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub310" placeholder="Subject 3"></td>
+                        <td><input type="text" name="o310" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max310" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub410" placeholder="Subject 4"></td>
+                        <td><input type="text" name="o410" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max410" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub510" placeholder="Subject 5"></td>
+                        <td><input type="text" name="o510" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max510" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub610" placeholder="Subject 6"></td>
+                        <td><input type="text" name="o610" placeholder="Obtained Marks"></td>
+                        <td><input type="text" name="max610" placeholder="Maximum Marks"></td>
+                    </tr>
+                </table><br>
+             
+                    <h3>Under Graduation Details</h3>
+                    <table cellspacing="20px;" >
+                        <tr>
+                            <td>
+                                <input type="text" name="collegeRoll" placeholder="College Roll No." >
+                            </td>
+                            <td style="padding-left: 30px;" >
+                                <input type="text" name="universityRoll" placeholder="University Roll No." >
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Medium : 
+                                <select style="font-size: 15px">
+                                    <option>English</option>
+                                    <option>Hindi</option>
+                                </select>
+                            </td>
+                            <td style="padding-left: 30px;" >Stream : 
+                                <select style="font-size: 15px">
+                                    <option>Science</option><option>Commerce</option><option>Arts</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Department : 
+                                <select style="font-size: 15px">
+                                    <option>Computer</option>
+                                </select>
+                            </td>
+                            <td style="padding-left: 30px;" >Courses : 
+                                <select style="font-size: 15px">
+                                    <option>Bsc.(Hons) Computer Science</option>
+                                    <option>BVOC</option>
+                                    <option>BA Programme</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Year Of Admission : 
+                                <select style="font-size: 15px" >
+                                    <option>2010</option><option>2011</option><option>2012</option>
+                                    <option>2013</option><option>2014</option><option>2015</option>
+                                    <option>2016</option><option>2017</option><option>2018</option>
+                                </select>
+                            </td>
+                            <td style="padding-left: 30px;" >Year Of Passing : 
+                                 <select style="font-size: 15px" >
+                                    <option>2012</option><option>2013</option><option>2014</option>
+                                    <option>2015</option><option>2016</option><option>2017</option>
+                                    <option>2018</option><option>2019</option><option>2020</option>
+                                    <option>2021</option><option>2022</option><option>2023</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table cellspacing="20px" >
+                        <th>Semester</th>
+                        <th>Obtained Marks (CGPA) </th>
+                        <th>Maximum Marks (CGPA) </th>
+                        <tr>
+                            <td><h4>Semester 1</h4>    </td>
+                            <td><input type="text" name="sem1" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem11" placeholder="Marks Marks" >     </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Semester 2</h4>    </td>
+                            <td><input type="text" name="sem2" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem21" placeholder="Marks Marks" >     </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Semester 3</h4>    </td>
+                            <td><input type="text" name="sem3" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem31" placeholder="Marks Marks" >     </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Semester 4</h4>    </td>
+                            <td><input type="text" name="sem4" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem41" placeholder="Marks Marks" >     </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Semester 5</h4>    </td>
+                            <td><input type="text" name="sem5" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem51" placeholder="Marks Marks" >     </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Semester 6</h4>    </td>
+                            <td><input type="text" name="sem6" placeholder="Obtained Marks" >    </td>
+                            <td> <input type="text" name="sem61" placeholder="Marks Marks" >     </td>
+                        </tr>
+                    </table>
+
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+<!-- Experiance details -->
+            <fieldset>
+                <h2 class="fs-title">Experiance</h2>
+                <h3 class="fs-subtitle">Show Your Best</h3>
+                <table cellpadding="10px" >
+                    <tr>
+                        <td><h3 align="left" >Skill Sets :</h3></td>
+                        <td style="padding-left: 20px" ><input type="text" name="s1" placeholder="Skill 1" ></td>
+                    </tr>
+                    <tr><td></td><td style="padding-left: 20px" ><input type="text" name="s2" placeholder="Skill 2" ></td></tr>
+                    <tr><td></td><td style="padding-left: 20px" ><input type="text" name="s3" placeholder="Skill 3" ></td></tr>
+                    <tr><td></td><td style="padding-left: 20px" ><input type="text" name="s4" placeholder="Skill 4" ></td></tr>
+                </table>
+                
+                
+                <table>
+                    <tr><td colspan="2"><h4> <br>Have you recently do an internship ?</h4></td></tr>                   
+                        <th>Yes</th>
+                        <th>No</th>
+                    <tr>
+                        <td><input type="radio" name="y"></td>
+                        <td><input type="radio" name="y"></td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2" > <br><input type="text" name="com" placeholder="Conmpany Name" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" ><input type="text" name="com" placeholder="Address of Conmpany" ></td>
+                    </tr>
+                    <tr><td colspan="2" > <br><h4>What's your experience ?</h4></td></tr>
+                </table>
+               <textarea  name="exper" placeholder="About your Experiance"  rows="5" ></textarea>
+                
+
+
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+<!-- Contacts details -->
+            <fieldset>
+                <h2 class="fs-title">Contacts</h2>
+                <h3 class="fs-subtitle">Be in touch</h3>
+                <table>
+                    <tr>
+                        <td><input type="text" name="mob1" placeholder="Mobile No. 1" ></td>
+                        <td><input type="text" name="email1"  placeholder="Email ID" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" name="add1" placeholder="Permanent Address" ></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="add1" placeholder="Permanent Address" ></td>
+                        <td><input type="text" name="state" placeholder="State" ></td>
+                        <td><input type="text" name="pincode" placeholder="Pincode" ></td>
+                    </tr><br>
+
+                    <tr><td colspan="3" align="left">Guardian\Parents's Contacts : </td></tr>
+                    <tr>
+                        <td><input type="text" name="mob2" placeholder="Mobile No. 1" ></td>
+                        <td><input type="text" name="email2"  placeholder="Email ID" ></td>    
+                    </tr>
+
+                </table>
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+<!-- Submit -->
+            <fieldset>
+                <h2 class="fs-title">Sumbit</h2>
+                <h3 class="fs-subtitle">Best of Luck</h3>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+
+<!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascript/MultiScript.js" ></script>
+</body>
+</html>
